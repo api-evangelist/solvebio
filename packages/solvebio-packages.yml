@@ -1,0 +1,46 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/solvebio
+note: >-
+  SolveBio has been rebranded to QuartzBio (Precision for Medicine). These
+  legacy first-party SolveBio client libraries remain published on the public
+  registries; the Python client is officially deprecated (end of maintenance
+  2026-03-31) in favor of the `quartzbio` package.
+packages:
+  - language: python
+    registry: pypi
+    name: solvebio
+    version: 2.35.0
+    url: https://pypi.org/project/solvebio/
+    repository: https://github.com/solvebio/solvebio-python
+    install: pip install solvebio
+    requires_python: '>=3.8'
+    official: true
+    deprecated: true
+    deprecation_note: >-
+      Deprecated; use `quartzbio` instead. No longer maintained after
+      2026-03-31. Migration: https://github.com/quartzbio/quartzbio-python
+    ships_cli: true
+  - language: javascript
+    registry: npm
+    name: solvebio
+    version: 1.2.1
+    url: https://www.npmjs.com/package/solvebio
+    repository: https://github.com/solvebio/solvebio-js
+    install: npm install solvebio
+    official: true
+  - language: ruby
+    registry: rubygems
+    name: solvebio
+    version: 1.9.0
+    url: https://rubygems.org/gems/solvebio
+    repository: https://github.com/solvebio/solvebio-ruby
+    install: gem install solvebio
+    official: true
+  - language: r
+    registry: github
+    name: solvebio
+    url: https://github.com/solvebio/solvebio-r
+    repository: https://github.com/solvebio/solvebio-r
+    install: devtools::install_github("solvebio/solvebio-r")
+    official: true

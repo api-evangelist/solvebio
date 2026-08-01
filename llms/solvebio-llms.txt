@@ -1,0 +1,27 @@
+# SolveBio
+
+> SolveBio is a platform for biomedical and genomic datasets that lets developers
+> query, harmonize, and automate bioinformatics workflows over curated reference
+> data through a REST API and first-party client libraries. SolveBio has been
+> rebranded to QuartzBio (a Precision for Medicine company); the API now serves
+> as the QuartzBio EDP REST API and the SolveBio SDKs are being deprecated in
+> favor of the `quartzbio` packages.
+
+## Status
+- Rebranded to QuartzBio: https://www.quartz.bio/
+- Python client deprecated (end of maintenance 2026-03-31): https://github.com/solvebio/solvebio-python
+- Successor Python client: https://github.com/quartzbio/quartzbio-python
+
+## SDKs
+- Python (deprecated): https://pypi.org/project/solvebio/
+- JavaScript: https://www.npmjs.com/package/solvebio
+- Ruby: https://rubygems.org/gems/solvebio
+- R: https://github.com/solvebio/solvebio-r
+
+## API
+- REST API (QuartzBio EDP), served per-customer instance host, path /v1
+- Swagger UI: {api_host}/swagger
+- Authentication: OAuth2 access token or API key
+
+## Source
+- GitHub organization: https://github.com/solvebio

@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/solvebio/solvebio-python
+status: sunset
+summary: >-
+  SolveBio has been rebranded to QuartzBio (a Precision for Medicine company).
+  The solvebio.com web presence 301-redirects to https://www.quartz.bio/ and the
+  developer docs host docs.solvebio.com now returns 404. The legacy SolveBio API
+  continues to serve as the QuartzBio EDP REST API on per-customer instance
+  hosts, and the SolveBio SDKs remain published but are being deprecated in favor
+  of the `quartzbio` packages.
+rebrand:
+  successor: QuartzBio
+  successor_url: https://www.quartz.bio/
+  successor_python: https://github.com/quartzbio/quartzbio-python
+deprecation:
+  policy: >-
+    The SolveBio Python client is deprecated in favor of the `quartzbio` package
+    and will no longer be maintained after 2026-03-31.
+  end_of_maintenance: '2026-03-31'
+  replacement_package: quartzbio
+  migration_url: https://github.com/quartzbio/quartzbio-python
+versioning:
+  scheme: uri-path
+  api_path: /v1
+  swagger: '{api_host}/swagger'
+hosts_observed:
+  - {host: www.solvebio.com, status: 301, redirect: https://www.quartz.bio/}
+  - {host: docs.solvebio.com, status: 404}
+  - {host: api.solvebio.com, status: 403, note: reachable but authenticated}
+  - {host: my.solvebio.com, status: 403, note: reachable but authenticated}
+status_page: null
+sla: null

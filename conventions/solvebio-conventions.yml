@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/solvebio/solvebio-python
+note: >-
+  Cross-cutting client/API semantics derived from the first-party SolveBio /
+  QuartzBio EDP Python client documentation. No public OpenAPI is reachable.
+authentication:
+  ref: authentication/solvebio-authentication.yml
+  styles: [oauth2_access_token, api_key]
+versioning:
+  scheme: uri-path
+  path: /v1
+  swagger_ui: '{api_host}/swagger'
+retries:
+  description: >-
+    The client retries failed requests. By default retries are enabled only for
+    idempotent HTTP operations (HEAD, GET, PUT, DELETE, OPTIONS, TRACE). Setting
+    SOLVEBIO_RETRY_ALL enables aggressive retries for non-idempotent operations
+    (POST, PATCH) as well.
+  idempotent_methods: [HEAD, GET, PUT, DELETE, OPTIONS, TRACE]
+  retry_all_env: SOLVEBIO_RETRY_ALL
+logging:
+  loglevel_env: SOLVEBIO_LOGLEVEL
+  logfile_env: SOLVEBIO_LOGFILE
+  default_logfile: ~/.solvebio/solvebio.log
+error_reference: null
+rate_limit_signal: null

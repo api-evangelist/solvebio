@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/solvebio/solvebio-python
+docs: https://github.com/solvebio/solvebio-python#configuring-the-client
+note: >-
+  Derived from the first-party client documentation (no public OpenAPI is
+  reachable — the QuartzBio EDP REST API is served per-customer at instance
+  hosts such as https://solvebio.api.az.aws.quartz.bio with a Swagger UI at
+  {api_host}/swagger behind authentication).
+summary:
+  types: [oauth2, apiKey]
+  credential_lookup_order:
+    - access_token   # SOLVEBIO_ACCESS_TOKEN (OAuth2)
+    - api_key        # SOLVEBIO_API_KEY
+    - local_credentials_file  # solvebio login
+schemes:
+  - name: OAuth2AccessToken
+    type: oauth2
+    description: >-
+      OAuth2 access token supplied via the SOLVEBIO_ACCESS_TOKEN environment
+      variable (or programmatically). Preferred credential.
+    env: SOLVEBIO_ACCESS_TOKEN
+  - name: ApiKey
+    type: apiKey
+    in: header
+    description: >-
+      API key supplied via SOLVEBIO_API_KEY, sent as an Authorization token
+      header to the API host.
+    env: SOLVEBIO_API_KEY
+  - name: InteractiveLogin
+    type: http
+    scheme: credentials
+    description: >-
+      `solvebio login` prompts for credentials and caches a token in the local
+      credentials file (~/.solvebio).
+config_env:
+  api_host: SOLVEBIO_API_HOST
+  access_token: SOLVEBIO_ACCESS_TOKEN
+  api_key: SOLVEBIO_API_KEY

@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/solvebio/solvebio-python
+note: >-
+  The SolveBio Python package ships a first-party `solvebio` command-line
+  interface as a console entry point. Deprecated alongside the Python client
+  (superseded by the `quartzbio` CLI). Only the documented commands are
+  captured here; the full subcommand surface is not re-derived to avoid
+  fabrication.
+binary: solvebio
+package_ref: packages/solvebio-packages.yml
+install:
+  - pip install solvebio
+commands:
+  - name: login
+    description: Authenticate interactively and cache credentials in ~/.solvebio.
+  - name: shell
+    description: Launch an interactive SolveBio Python shell (IPython recommended).
+config_env:
+  - SOLVEBIO_API_HOST
+  - SOLVEBIO_ACCESS_TOKEN
+  - SOLVEBIO_API_KEY
+  - SOLVEBIO_LOGLEVEL
+  - SOLVEBIO_LOGFILE
+  - SOLVEBIO_RETRY_ALL
