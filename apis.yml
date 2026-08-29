@@ -10,6 +10,17 @@ description: >-
   SolveBio SDKs are being deprecated in favor of the quartzbio packages (Python
   client end of maintenance 2026-03-31). Surfaced as a portfolio company of a16z
   and enriched from its public GitHub organization and package registries.
+deliveryModel:
+  model: library
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Library · distributed through package registries, no callable service
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
