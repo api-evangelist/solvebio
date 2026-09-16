@@ -1,15 +1,12 @@
 aid: solvebio
 name: SolveBio
-description: >-
-  SolveBio is a platform for biomedical and genomic datasets that lets developers
-  query, harmonize, and automate bioinformatics workflows over curated reference
-  data through a REST API and first-party client libraries (Python, JavaScript,
-  Ruby, and R). SolveBio has been rebranded to QuartzBio, a Precision for Medicine
-  company: the solvebio.com website now redirects to quartz.bio, the legacy API is
-  served as the QuartzBio EDP REST API on per-customer instance hosts, and the
-  SolveBio SDKs are being deprecated in favor of the quartzbio packages (Python
-  client end of maintenance 2026-03-31). Surfaced as a portfolio company of a16z
-  and enriched from its public GitHub organization and package registries.
+description: 'SolveBio is a platform for biomedical and genomic datasets that lets developers query, harmonize,
+  and automate bioinformatics workflows over curated reference data through a REST API and first-party
+  client libraries (Python, JavaScript, Ruby, and R). SolveBio has been rebranded to QuartzBio, a Precision
+  for Medicine company: the solvebio.com website now redirects to quartz.bio, the legacy API is served
+  as the QuartzBio EDP REST API on per-customer instance hosts, and the SolveBio SDKs are being deprecated
+  in favor of the quartzbio packages (Python client end of maintenance 2026-03-31). Surfaced as a portfolio
+  company of a16z and enriched from its public GitHub organization and package registries.'
 deliveryModel:
   model: library
   open_source: false
@@ -45,7 +42,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-09-16'
 tags:
 - Company
 - Genomics
@@ -57,9 +54,8 @@ tags:
 - SDK
 apis:
 - name: SolveBio API
-  description: >-
-    REST API for querying biomedical and genomic datasets (now the QuartzBio EDP
-    REST API). Served per-customer on instance hosts; requires authentication.
+  description: REST API for querying biomedical and genomic datasets (now the QuartzBio EDP REST API).
+    Served per-customer on instance hosts; requires authentication.
   humanURL: https://www.solvebio.com
   baseURL: https://api.solvebio.com
   properties:
@@ -73,6 +69,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Website
+  url: https://solvebio.com
 - type: DomainSecurity
   url: security/solvebio-domain-security.yml
 - type: GitHubOrganization
